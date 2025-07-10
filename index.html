@@ -11,8 +11,8 @@
 </head>
 <body>
     <!-- Input Upload Gambar -->
-<input type="file" id="upload" accept="image/*" style="margin: 20px; z-index: 10; position: relative;" />
-
+<input type="file" id="upload" accept="image/*" style="display: none;" />
+<label for="upload"><h1 style="font-size: 40px; Padding: 10px; border: 1px dotted red; border-radius: 4px;">+</h1><label/>
 <!-- Kontainer untuk Menampilkan Gambar dan Watermark -->
 <div id="output-container" style="position: relative; display: inline-block;"></div>
 
@@ -94,7 +94,7 @@
             <!-- Handler -->
             <div class="row handler-section">
               <img class="icon" src="img/water_icon_handler.png" alt="Handler">
-              <div class="note-view">Muhammad Taufik</div>
+              <div class="note-view">Petugas Patroli</div>
             </div>
         
             <!-- Validated -->
@@ -107,7 +107,7 @@
 
     </label>
     </div>
-    <button id="download-image">Unduh Gambar</button>
+    <button id="download-image" style="margin-top: 5px;">Save</button>
     
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
