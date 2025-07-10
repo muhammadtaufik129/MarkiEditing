@@ -85,6 +85,7 @@ h1,h2,h3,h4{
       text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
       padding-top: 7px;
       font-weight: 900;
+       margin-bottom: 4px;
 
     }
     .small-text {
