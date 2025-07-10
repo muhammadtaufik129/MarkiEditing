@@ -76,7 +76,7 @@ h1,h2,h3,h4{
       font-style: capitalize;
       font-weight: 1000;
      display: inline-block; /* wajib agar transform bekerja dengan benar */
-  transform: scaleX(0.93); /* perkecil lebar font */
+  transform: scaleX(0.92); /* perkecil lebar font */
   transform-origin: left;
     }
     .datetime {
@@ -89,10 +89,14 @@ h1,h2,h3,h4{
     }
     .small-text {
       font-size: 20px;
-      font-weight: 900;
+      font-weight: 700;
     }
     .location-section, .coordinate-section, .handler-section, .note-section {
       margin-top: 3px;
+display: inline-block; /* wajib agar transform bekerja dengan benar */
+  transform: scaleX(0.92); /* perkecil lebar font */
+  transform-origin: left;
+
     }
     .icon {
       width: 20px;
@@ -103,7 +107,11 @@ h1,h2,h3,h4{
       font-size: 15px;
       flex-grow: 1;
       flex-shrink: 1;
-      font-weight: 900;
+display: inline-block; /* wajib agar transform bekerja dengan benar */
+  transform: scaleX(0.92); /* perkecil lebar font */
+  transform-origin: left;
+
+      font-weight: 700;
     }
     .validated-section {
       display: flex;
