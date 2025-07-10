@@ -17,7 +17,7 @@
 <div id="output-container" style="position: relative; display: inline-block;"></div>
 
 <!-- Tombol Edit -->
-<button id="edit-button">Edit</button>
+<button id="edit-button" name="edit-button" type="button">Edit</button>
 
 <!-- Popup Container -->
 <div class="popup-overlay" id="popup">
@@ -44,7 +44,7 @@
 
     <label>
       Nama Petugas: <br>
-      <input type="text" id="input-handler" placeholder="Nama Petugas" />
+      <input type="text" id="input-handler" placeholder="Nama Petugas" value="Petugas Patroli"/>
     </label>
     &nbsp;<input type="checkbox" name="hidePetugas" id="hidePetugas" value="uncheck"/>
     <label for="hidePetugas">jangan Tampilkan</label><br><br>
@@ -57,7 +57,7 @@
 
     <div id='template'>
         
-      <div class="marki-box">
+      <label for="edit-button" class="marki-box">
         <div class="column">
         
             <!-- Section Title -->
@@ -105,14 +105,13 @@
         
           </div>
 
-    </div>
+    </label>
     </div>
     <button id="download-image">Unduh Gambar</button>
     
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="js/backendJs.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/frontendJs.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 
