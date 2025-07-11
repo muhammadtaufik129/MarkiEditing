@@ -21,7 +21,7 @@ h1,h2,h3,h4{
 .teb{
     position: absolute; scale: 1.01;
 }
-.marki-box , .time-box {
+.marki-box , .time-box, .marki-box-clone{
       background: url('../img/water_security_patro1_bg.png');
       background-size: cover;
       background-position: center;
