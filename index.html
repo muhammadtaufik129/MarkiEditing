@@ -6,15 +6,25 @@
   <title>Patroli Keamanan</title>
     <link rel="stylesheet" href="css/style1.css" type="text/css" media="all" />
   <style type='text/css' media='all'>
-canvas {
-  background: transparent;
-}
+    canvas {
+      background: transparent;
+    }
+    .marki-box,.marki-box-clone{
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); /* arah, ketebalan, warna */
+    }
+    .note-view,.location-view {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
   </style>
 </head>
 <body>
     <!-- Input Upload Gambar -->
-<input type="file" id="upload" accept="image/*" style="display: none;" />
-<label for="upload"><h1 style="font-size: 50px; margin: 0; Padding: 10px 10px; border: 1px dotted blue; border-radius: 4px; text-align: center; background-color: white; color:blue;">+</h1><label/>
+<input type="file" multiple="true" id="upload" accept="image/*" style="display: none;" />
+<div>
+    <label for="upload" class="upload-label"><span>unggah Gambar</span><label/>
+</div>
 <!-- Kontainer untuk Menampilkan Gambar dan Watermark -->
 <div id="output-container" style="position: relative; display: inline-block;"></div>
 
@@ -26,12 +36,12 @@ canvas {
   <div id="form-input">
     <label>
       Jam: <br>
-      <input type="time" id="input-time" value="04:30" />
+      <input type="time" id="input-time" value="00:00" />
     </label><br><br>
 
     <label>
       Tanggal: <br>
-      <input type="date" id="input-date" value="2025-07-03" />
+      <input type="date" id="input-date" value="0000-00-00" />
     </label><br><br>
 
     <label>
@@ -109,10 +119,12 @@ canvas {
 
     </label>
     </div>
-    <button id="download-image" style="margin-top: 5px;">Save</button>
+    <button id="download-image" class="save-button" style="margin-top: 5px;">Save</button>
     
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
