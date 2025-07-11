@@ -1,0 +1,21 @@
+{
+  "name": "Patroli Keamanan",
+  "short_name": "Patroli",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a3d62",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "img/water_security1_subject_bg.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/water_security_patrol_bg.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
